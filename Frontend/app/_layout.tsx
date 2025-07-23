@@ -17,6 +17,7 @@ export default function RootLayout() {
 	const checkToken = async () => {
 		const token = await getToken();
 		if (token) {
+			await deleteToken();
 			setIsAuthenticated(true);
 			// Load saved user role
 			const savedRole = await getUserRole();
