@@ -1,5 +1,5 @@
 // API Configuration
-export const API_BASE_URL = "http://localhost:3000/api/v1";
+export const API_BASE_URL = "https://feehsay-be-2ura7.ondigitalocean.app/feeshay-backend2/api/v1";
 
 // API Endpoints
 export const ENDPOINTS = {

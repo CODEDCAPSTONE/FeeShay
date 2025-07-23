@@ -14,7 +14,7 @@ class SocketService {
             return;
         }
 
-        const baseUrl = process.env.EXPO_PUBLIC_API_URL || 'http://localhost:3000/api/v1';
+        const baseUrl = process.env.EXPO_PUBLIC_API_URL || 'https://feehsay-be-2ura7.ondigitalocean.app/feeshay-backend2/api/v1';
         const socketUrl = baseUrl.replace(/\/api\/v\d+$/, '').replace(/\/api$/, '');
         
         this.socket = io(socketUrl, {

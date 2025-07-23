@@ -111,7 +111,7 @@ export const talentsApi = {
     }
     
     const queryString = queryParams.toString();
-    const url = `/api/v1/talents${queryString ? `?${queryString}` : ''}`;
+    const url = `/talents${queryString ? `?${queryString}` : ''}`;
     
     const response = await apiClient.get<TalentsResponse>(url);
     return response.data;
@@ -123,7 +123,7 @@ export const talentsApi = {
    * @returns Promise with talent data
    */
   getTalentById: async (id: string): Promise<TalentResponse> => {
-    const response = await apiClient.get<TalentResponse>(`/api/v1/talents/${id}`);
+    const response = await apiClient.get<TalentResponse>(`/talents/${id}`);
     return response.data;
   },
 
@@ -132,7 +132,7 @@ export const talentsApi = {
    * @returns Promise with categories data
    */
   getCategories: async (): Promise<CategoriesResponse> => {
-    const response = await apiClient.get<CategoriesResponse>('/api/v1/talents/categories');
+    const response = await apiClient.get<CategoriesResponse>('/talents/categories');
     return response.data;
   },
 };

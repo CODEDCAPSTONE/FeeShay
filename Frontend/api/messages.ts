@@ -1,6 +1,6 @@
 import { getToken } from "./storage";
 
-const API_URL = process.env.EXPO_PUBLIC_API_URL || "http://192.168.6.37:3000/api/v1";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || "https://feehsay-be-2ura7.ondigitalocean.app/feeshay-backend2/api/v1";
 
 interface ApiResponse<T = any> {
     success: boolean;
